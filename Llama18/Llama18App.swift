@@ -1,17 +1,19 @@
 //
-//  Llama18App.swift
-//  Llama18
+//  Llama_RecoveryApp.swift
+//  Llama Recovery
 //
-//  Created by Fabiano Calvay on 4/22/24.
+//  Created by Fabiano Calvay on 4/20/24.
 //
 
 import SwiftUI
 
 @main
-struct Llama18App: App {
+struct Llama_RecoveryApp: App {
+    @StateObject var userInfo = UserInfo()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(userInfo)
         }
     }
 }
